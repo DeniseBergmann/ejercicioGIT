@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Hedvig+Letters+Serif:opsz@12..24&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 
 *
 {
@@ -7,18 +8,23 @@ margin: 0;
 box-sizing: border-box;
 font-family: 'Roboto';
 }
+
 /* Start: Navbar */
 
-.navbar_header{
+.navbar_header {
     height: 123px;
     width: 100%;
-    background-color: black;
     padding: 0 38px 0 122px;
+    position: fixed;
 }
-.navbar_header .navbar_nav .navbar_logo{
-    height: fit-content;
-    width: fit-content;
+
+.navbar_header .navbar_nav a {
+    text-decoration: none;
+    color: #FFF;
+    font-size: 20px;
+    text-align: center;
 }
+
 .navbar_header .navbar_nav {
     height: 100%;
     display: flex;
@@ -27,14 +33,12 @@ font-family: 'Roboto';
     align-items: center;
 }
 
-.navbar_header .navbar_container-links{
+.navbar_header .navbar_container-links {
     height: fit-content;
     display: flex;
     gap: 60px;
     flex-direction: row;
     justify-content: center;
-
-
 }
 
 .navbar_header .navbar_container-links a {
@@ -42,5 +46,88 @@ font-family: 'Roboto';
     color: #FFF;
     font-size: 20px;
     text-align: center;
+}   
+
+.navbar_logo {
+    width: auto;
+    height: 17%;
 }
+
+.LogIn {
+    padding-right: 20px;
+    border-right: 1.5px solid #FFF; 
+}
+
+.SignUp {
+    padding-left: 20px;
+}
+
+.ESP {
+    padding-right: 20px; 
+}
+
+.ENG {
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.menulink {
+    padding-left: 10px;
+}
+
+.imgmenu {
+    padding-left: 30px;
+    border-left: 1.5px solid #FFF;
+    width: 25%;
+    height: auto;
+}
+
 /* End: Navbar */
+
+/* Start: Home Landing image */
+
+.home_section_presentation {
+    width: 100%;
+    height: 408px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.home_section_presentation {
+    background-image: url('./IMG/Imagen1.png');
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+
+.home_section_presentation .home_section_text {
+    width: auto;
+    height: fit-content;
+    padding-left: 122px;
+}
+
+.navbar_header::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.9), transparent);
+    z-index: 1;
+}
+
+.home_section_presentation .home_section_text p {
+    color: #B4B7B7;
+    font-family: 'Hedvig Letters Serif';
+    font-size: 40px;
+    font-weight: 400;
+}
+
+.home_section_presentation .home_section_text h1 {
+    color: #FFF;
+    font-family: 'Hedvig Letters Serif';
+    font-size: 80px;
+    font-weight: 500;
+}
