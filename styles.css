@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Hedvig+Letters+Serif:opsz@12..24&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Hedvig+Letters+Serif:opsz@12..24&family=Poppins&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 
 *
 {
@@ -11,10 +12,19 @@ font-family: 'Roboto';
 
 /* Start: Navbar */
 
+.header {
+    background: linear-gradient(180deg, rgba(0,0,0,0.50) 0%, rgba(0,0,0,0.30) 75%, rgba(0,0,0,0) 100%), url(IMG/Imagen1.png);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+
 .navbar_header {
+    background: linear-gradient(180deg, rgba(0,0,0,1) 0%, rgba(0,0,0,0.50) 75%, rgba(0,0,0,0.10) 100%);
     height: 123px;
     width: 100%;
     padding: 0 38px 0 122px;
+    border-bottom: 1px solid #FFF;
     position: fixed;
 }
 
@@ -88,34 +98,17 @@ font-family: 'Roboto';
 
 .home_section_presentation {
     width: 100%;
-    height: 408px;
+    height: 957px;
     display: flex;
-    align-items: center;
+    align-items: flex-start;
     justify-content: flex-start;
-}
-
-.home_section_presentation {
-    background-image: url('./IMG/Imagen1.png');
-    background-position: center center;
-    background-repeat: no-repeat;
-    background-size: 100%;
 }
 
 .home_section_presentation .home_section_text {
     width: auto;
     height: fit-content;
+    padding-top: 521px;
     padding-left: 122px;
-}
-
-.navbar_header::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.9), transparent);
-    z-index: 1;
 }
 
 .home_section_presentation .home_section_text p {
@@ -131,3 +124,74 @@ font-family: 'Roboto';
     font-size: 80px;
     font-weight: 500;
 }
+
+.search_text {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-end;
+}
+
+input::placeholder {
+    color: #FFF;
+}
+
+.search_text .search_element {
+    padding-top: 167px;
+    padding-right: 122px;
+}
+
+.search {
+    background: url(IMG/lupa.png) no-repeat 458px 20px;
+    width: 529px;
+    height: 60px;
+    border: solid 1px #fff;
+    border-radius: 100px;
+    outline: none;
+    font-family: 'Roboto';
+    font-size: 20px;
+    font-weight: 390;
+    padding-left: 44px;
+  }
+
+  /* Start: Home Landing image */
+
+  /* Start: Social Media */
+
+  .social_media {
+    padding-left: 52px;
+    padding-bottom: 247px;
+  }
+
+  .social_media {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+
+  .social_media_text p {
+    padding-bottom: 15px;
+    transform: rotate(90deg);
+    color: #7E7E7E;
+    font-family: 'Poppins';
+    font-size: 20px;
+    font-weight: 500;
+  }
+
+  .social_media_icons {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .social_media_text .social_media_icons{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    justify-content: center;
+    align-items: flex-start;
+  }
+
+  /* End: Social Media */
+
