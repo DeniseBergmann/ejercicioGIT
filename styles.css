@@ -153,11 +153,11 @@ input::placeholder {
     padding-left: 44px;
 }
 
-/* Start: Home Landing image */
+/* End: Home Landing image */
 
 /* Start: Social Media */
 
-.social_media {
+.home_section_vertical_social {
     position: absolute;
     z-index: 999;
     left: 20px;
@@ -168,12 +168,12 @@ input::placeholder {
     align-items: center;
     gap: 20px;
 }
-
-.social_media p {
-
+  
+ .home_section_vertical_social p {
     font-family: 'Poppins';
+    font-size: 20px;
     font-weight: 800;
-    color: #b7b6b6;
+    color: #7E7E7E;
     line-height: 1px;
     width: 100%;
     height: auto;
@@ -183,14 +183,14 @@ input::placeholder {
     -ms-transform: rotate(90deg);
     -o-transform: rotate(90deg);
 }
-
-.social_media .line-vertical {
+  
+  .home_section_vertical_social .line-vertical {
     height: 45px;
-    border-left: 1px solid #b7b6b6;
+    border-left: 1px solid #7E7E7E;
     margin-top: 10px;
   }
-
-  .social_media .social {
+  
+  .home_section_vertical_social .social {
     height: 18px;
     width: 18px;
   }
