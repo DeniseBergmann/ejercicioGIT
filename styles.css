@@ -158,40 +158,43 @@ input::placeholder {
 /* Start: Social Media */
 
 .social_media {
-    padding-left: 52px;
-    padding-bottom: 247px;
-}
-
-  .social_media {
+    position: absolute;
+    z-index: 999;
+    left: 20px;
+    height: auto;
     display: flex;
     flex-direction: column;
-    gap: 15px;
-    justify-content: space-between;
-    align-items: flex-start;
-}
-
-.social_media_text p {
-    padding-right: 10px;
-    transform: rotate(90deg);
-    color: #b7b6b6;
-    font-family: 'Poppins';
-    font-size: 20px;
-    font-weight: bold;
-}
-
-.social_media_icons {
-    display: flex;
-    flex-direction: column;
-    gap: 15px;
-}
-
-.social_media_text .social_media_icons{
-    display: flex;
-    flex-direction: column;
-    gap: 15px;
     justify-content: center;
     align-items: center;
+    gap: 20px;
 }
+
+.social_media p {
+
+    font-family: 'Poppins';
+    font-size: 20px;
+    font-weight: 800;
+    color: #b7b6b6;
+    line-height: 1px;
+    width: 100%;
+    height: auto;
+    transform: rotate(90deg);
+    -webkit-transform: rotate(90deg);
+    -moz-transform: rotate(90deg);
+    -ms-transform: rotate(90deg);
+    -o-transform: rotate(90deg);
+}
+
+.social_media .line-vertical {
+    height: 45px;
+    border-left: 1px solid #b7b6b6;
+    margin-top: 10px;
+  }
+
+  .social_media .social {
+    height: 18px;
+    width: 18px;
+  }
 
 /* End: Social Media */
 
