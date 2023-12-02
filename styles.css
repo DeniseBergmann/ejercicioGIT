@@ -1,0 +1,479 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Hedvig+Letters+Serif:opsz@12..24&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Hedvig+Letters+Serif:opsz@12..24&family=Poppins&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+*
+{
+padding: 0;
+margin: 0;
+box-sizing: border-box;
+font-family: 'Roboto';
+}
+
+/* Start: Navbar */
+
+.header {
+    background: linear-gradient(180deg, rgba(0,0,0,0.50) 0%, rgba(0,0,0,0.30) 75%, rgba(0,0,0,0) 100%), url(IMG/Imagen1.png);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+
+.navbar_header {
+    background: linear-gradient(180deg, rgba(0,0,0,1) 0%, rgba(0,0,0,0.50) 75%, rgba(0,0,0,0.10) 100%);
+    height: 123px;
+    width: 100%;
+    padding: 0 38px 0 122px;
+    border-bottom: 1px solid #FFF;
+    position: fixed;
+}
+
+.navbar_header .navbar_nav a {
+    text-decoration: none;
+    color: #FFF;
+    font-size: 20px;
+    text-align: center;
+}
+
+.navbar_header .navbar_nav {
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar_header .navbar_container-links {
+    height: fit-content;
+    display: flex;
+    gap: 60px;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.navbar_header .navbar_container-links a {
+    text-decoration: none;
+    color: #FFF;
+    font-size: 20px;
+    text-align: center;
+}   
+
+.navbar_logo {
+    width: auto;
+    height: 17%;
+}
+
+.LogIn {
+    padding-right: 20px;
+    border-right: 1.5px solid #FFF; 
+}
+
+.SignUp {
+    padding-left: 20px;
+}
+
+.ESP {
+    padding-right: 20px; 
+}
+
+.ENG {
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.menulink {
+    padding-left: 10px;
+}
+
+.imgmenu {
+    padding-left: 30px;
+    border-left: 1.5px solid #FFF;
+    width: 25%;
+    height: auto;
+}
+
+/* End: Navbar */
+
+/* Start: Home Landing image */
+
+.home_section_presentation {
+    width: 100%;
+    height: 957px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+
+.home_section_presentation .home_section_text {
+    width: auto;
+    height: fit-content;
+    padding-top: 521px;
+    padding-left: 122px;
+}
+
+.home_section_presentation .home_section_text p {
+    color: #B4B7B7;
+    font-family: 'Hedvig Letters Serif';
+    font-size: 40px;
+    font-weight: 400;
+}
+
+.home_section_presentation .home_section_text h1 {
+    color: #FFF;
+    font-family: 'Hedvig Letters Serif';
+    font-size: 80px;
+    font-weight: 500;
+}
+
+.search_text {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-end;
+}
+
+input::placeholder {
+    color: #FFF;
+}
+
+.search_text .search_element {
+    padding-top: 167px;
+    padding-right: 122px;
+}
+
+.search {
+    background: url(IMG/lupa.png) no-repeat 458px 20px;
+    width: 529px;
+    height: 60px;
+    border: solid 1px #fff;
+    border-radius: 100px;
+    outline: none;
+    font-family: 'Roboto';
+    font-size: 20px;
+    font-weight: 390;
+    padding-left: 44px;
+}
+
+/* Start: Home Landing image */
+
+/* Start: Social Media */
+
+.social_media {
+    padding-left: 52px;
+    padding-bottom: 247px;
+}
+
+  .social_media {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.social_media_text p {
+    padding-right: 10px;
+    transform: rotate(90deg);
+    color: #b7b6b6;
+    font-family: 'Poppins';
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.social_media_icons {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.social_media_text .social_media_icons{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    justify-content: center;
+    align-items: center;
+}
+
+/* End: Social Media */
+
+
+/* Start: Properties for rent */
+
+span {
+    color: #DF991B;
+    font-family: 'Hedvig Letters Serif';
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 400;
+}
+
+h2 {
+    color: #000;
+    font-family: 'Hedvig Letters Serif';
+    font-size: 80px;
+    font-style: normal;
+    font-weight: 500;
+}
+
+  .properties_for_rent_information {
+    padding-left: 122px;
+}
+
+  .properties_for_rent_information p {
+    color: #000;
+    font-family: 'Roboto';
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 330;
+    padding-top: 51px;
+}
+
+.big_button {
+    font-family: 'Roboto';
+    font-weight: 390;
+    font-size: 30px;
+    border: solid 1px #000;
+    background-color: transparent;
+    padding: 24px 65px;
+    border-radius: 100px;
+    transition: 0.5s ease;
+}
+
+.big_button:hover {
+    background-color: #000;
+    color: #FFF;
+}
+
+.page_button {
+    background-color: transparent;
+    color: #B4B7B7;
+    font-family: 'Roboto';
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 390;
+    border: none;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.properties_for_rent_button {
+    padding-left: 122px;
+    display: flex;
+    margin-top: 50px;
+}
+
+.properties_for_rent_button {
+    display: flex; 
+    justify-content: space-between;
+}
+
+.page_button .imagen_hover {
+    display: none;
+}
+
+.page_button:hover {
+    color: #DF991B;
+} 
+
+.page_button:hover .imagen_normal {
+    display: none;
+}
+
+.page_button:hover .imagen_hover {
+    display: inline;
+}
+
+.information_body {
+    padding-top: 124px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 69px;
+    place-items: start;
+}
+
+.properties_for_rent_galery {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    overflow-x: hidden;
+    gap: 20px;
+}
+
+.rent_picture {
+    grid-column: span 5;
+    overflow: hidden;
+    position: relative;
+}
+
+.rent_picture h3 {
+    font-family: 'Hedvig Letters Serif';
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 500;
+}
+
+.rent_picture p {
+    font-family: 'Hedvig Letters Serif';
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 500;
+}
+
+.inactive {
+    grid-column: span 2;
+}
+
+.rent_picture:hover {
+    cursor: pointer;
+} 
+
+.rent_picture:hover h3 {
+    background-color: #FFF;
+    color: black;
+}
+
+.rent_picture:hover p {
+    color: black;
+} 
+
+.rent_picture img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.rent_picture h3 {
+    position: absolute;
+    color: #FFF;
+    z-index: 1;
+    bottom: 0;
+    left: 0;
+    height: 145px;
+    width: 100%;
+    padding: 20px;
+    transition: 0.5s ease;
+}
+
+.rent_picture p {
+    position: absolute;
+    color: #FFF;
+    z-index: 1;
+    bottom: -45px;
+    left: 0;
+    height: 145px;
+    width: 100%;
+    padding: 20px;
+    transition: 0.5s ease;
+}
+
+/* End: Properties for rent */
+
+/* Start: Properties for sale */
+
+.information_body_sale {
+    padding-top: 124px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 69px;
+    place-items: start end;
+}
+
+.properties_for_sale_information {
+    padding-right: 122px;
+}
+
+  .properties_for_sale_information p {
+    color: #000;
+    font-family: 'Roboto';
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 330;
+    padding-top: 51px;
+}
+
+.properties_for_sale_button {
+    padding-right: 122px;
+    display: flex;
+    margin-top: 50px;
+}
+
+.properties_for_sale_button {
+    display: flex; 
+    justify-content: space-between;
+}
+
+.properties_for_sale_galery {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    overflow-x: hidden;
+    gap: 20px;
+}
+
+.sale_picture {
+    grid-column: span 5;
+    overflow: hidden;
+    position: relative;
+}
+
+.sale_picture h3 {
+    font-family: 'Hedvig Letters Serif';
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 500;
+}
+
+.sale_picture p {
+    font-family: 'Hedvig Letters Serif';
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 500;
+}
+
+.inactive {
+    grid-column: span 2;
+}
+
+.sale_picture:hover {
+    cursor: pointer;
+} 
+
+.sale_picture:hover h3 {
+    background-color: #FFF;
+    color: black;
+}
+
+.sale_picture:hover p {
+    color: black;
+} 
+
+.sale_picture img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.sale_picture h3 {
+    position: absolute;
+    color: #FFF;
+    z-index: 1;
+    bottom: 0;
+    left: 0;
+    height: 145px;
+    width: 100%;
+    padding: 20px;
+    transition: 0.5s ease;
+}
+
+.sale_picture p {
+    position: absolute;
+    color: #FFF;
+    z-index: 1;
+    bottom: -45px;
+    left: 0;
+    height: 145px;
+    width: 100%;
+    padding: 20px;
+    transition: 0.5s ease;
+}
+
+  /* End: Properties for rent */
+
