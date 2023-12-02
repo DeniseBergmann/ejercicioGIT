@@ -151,16 +151,16 @@ input::placeholder {
     font-size: 20px;
     font-weight: 390;
     padding-left: 44px;
-  }
+}
 
-  /* Start: Home Landing image */
+/* Start: Home Landing image */
 
-  /* Start: Social Media */
+/* Start: Social Media */
 
-  .social_media {
+.social_media {
     padding-left: 52px;
     padding-bottom: 247px;
-  }
+}
 
   .social_media {
     display: flex;
@@ -168,30 +168,312 @@ input::placeholder {
     gap: 15px;
     justify-content: space-between;
     align-items: flex-start;
-  }
+}
 
-  .social_media_text p {
-    padding-bottom: 15px;
+.social_media_text p {
+    padding-right: 10px;
     transform: rotate(90deg);
-    color: #7E7E7E;
+    color: #b7b6b6;
     font-family: 'Poppins';
     font-size: 20px;
-    font-weight: 500;
-  }
+    font-weight: bold;
+}
 
-  .social_media_icons {
+.social_media_icons {
     display: flex;
     flex-direction: column;
     gap: 15px;
-  }
+}
 
-  .social_media_text .social_media_icons{
+.social_media_text .social_media_icons{
     display: flex;
     flex-direction: column;
     gap: 15px;
     justify-content: center;
-    align-items: flex-start;
-  }
+    align-items: center;
+}
 
-  /* End: Social Media */
+/* End: Social Media */
+
+
+/* Start: Properties for rent */
+
+span {
+    color: #DF991B;
+    font-family: 'Hedvig Letters Serif';
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 400;
+}
+
+h2 {
+    color: #000;
+    font-family: 'Hedvig Letters Serif';
+    font-size: 80px;
+    font-style: normal;
+    font-weight: 500;
+}
+
+  .properties_for_rent_information {
+    padding-left: 122px;
+}
+
+  .properties_for_rent_information p {
+    color: #000;
+    font-family: 'Roboto';
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 330;
+    padding-top: 51px;
+}
+
+.big_button {
+    font-family: 'Roboto';
+    font-weight: 390;
+    font-size: 30px;
+    border: solid 1px #000;
+    background-color: transparent;
+    padding: 24px 65px;
+    border-radius: 100px;
+    transition: 0.5s ease;
+}
+
+.big_button:hover {
+    background-color: #000;
+    color: #FFF;
+}
+
+.page_button {
+    background-color: transparent;
+    color: #B4B7B7;
+    font-family: 'Roboto';
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 390;
+    border: none;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.properties_for_rent_button {
+    padding-left: 122px;
+    display: flex;
+    margin-top: 50px;
+}
+
+.properties_for_rent_button {
+    display: flex; 
+    justify-content: space-between;
+}
+
+.page_button .imagen_hover {
+    display: none;
+}
+
+.page_button:hover {
+    color: #DF991B;
+} 
+
+.page_button:hover .imagen_normal {
+    display: none;
+}
+
+.page_button:hover .imagen_hover {
+    display: inline;
+}
+
+.information_body {
+    padding-top: 124px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 69px;
+    place-items: start;
+}
+
+.properties_for_rent_galery {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    overflow-x: hidden;
+    gap: 20px;
+}
+
+.rent_picture {
+    grid-column: span 5;
+    overflow: hidden;
+    position: relative;
+}
+
+.rent_picture h3 {
+    font-family: 'Hedvig Letters Serif';
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 500;
+}
+
+.rent_picture p {
+    font-family: 'Hedvig Letters Serif';
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 500;
+}
+
+.inactive {
+    grid-column: span 2;
+}
+
+.rent_picture:hover {
+    cursor: pointer;
+} 
+
+.rent_picture:hover h3 {
+    background-color: #FFF;
+    color: black;
+}
+
+.rent_picture:hover p {
+    color: black;
+} 
+
+.rent_picture img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.rent_picture h3 {
+    position: absolute;
+    color: #FFF;
+    z-index: 1;
+    bottom: 0;
+    left: 0;
+    height: 145px;
+    width: 100%;
+    padding: 20px;
+    transition: 0.5s ease;
+}
+
+.rent_picture p {
+    position: absolute;
+    color: #FFF;
+    z-index: 1;
+    bottom: -45px;
+    left: 0;
+    height: 145px;
+    width: 100%;
+    padding: 20px;
+    transition: 0.5s ease;
+}
+
+/* End: Properties for rent */
+
+/* Start: Properties for sale */
+
+.information_body_sale {
+    padding-top: 124px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 69px;
+    place-items: start end;
+}
+
+.properties_for_sale_information {
+    padding-right: 122px;
+}
+
+  .properties_for_sale_information p {
+    color: #000;
+    font-family: 'Roboto';
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 330;
+    padding-top: 51px;
+}
+
+.properties_for_sale_button {
+    padding-right: 122px;
+    display: flex;
+    margin-top: 50px;
+}
+
+.properties_for_sale_button {
+    display: flex; 
+    justify-content: space-between;
+}
+
+.properties_for_sale_galery {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    overflow-x: hidden;
+    gap: 20px;
+}
+
+.sale_picture {
+    grid-column: span 5;
+    overflow: hidden;
+    position: relative;
+}
+
+.sale_picture h3 {
+    font-family: 'Hedvig Letters Serif';
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 500;
+}
+
+.sale_picture p {
+    font-family: 'Hedvig Letters Serif';
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 500;
+}
+
+.inactive {
+    grid-column: span 2;
+}
+
+.sale_picture:hover {
+    cursor: pointer;
+} 
+
+.sale_picture:hover h3 {
+    background-color: #FFF;
+    color: black;
+}
+
+.sale_picture:hover p {
+    color: black;
+} 
+
+.sale_picture img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.sale_picture h3 {
+    position: absolute;
+    color: #FFF;
+    z-index: 1;
+    bottom: 0;
+    left: 0;
+    height: 145px;
+    width: 100%;
+    padding: 20px;
+    transition: 0.5s ease;
+}
+
+.sale_picture p {
+    position: absolute;
+    color: #FFF;
+    z-index: 1;
+    bottom: -45px;
+    left: 0;
+    height: 145px;
+    width: 100%;
+    padding: 20px;
+    transition: 0.5s ease;
+}
+
+  /* End: Properties for rent */
 
