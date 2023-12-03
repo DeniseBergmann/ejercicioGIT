@@ -300,6 +300,7 @@ h2 {
 }
 
 .picture h3 {
+    color: #FFF;
     font-family: 'Hedvig Letters Serif';
     font-size: 30px;
     font-style: normal;
@@ -308,6 +309,7 @@ h2 {
 }
 
 .picture p {
+    color: #FFF;
     font-family: 'Hedvig Letters Serif';
     font-size: 40px;
     font-style: normal;
@@ -316,7 +318,14 @@ h2 {
 
 .picture:hover .picture_box {
     background-color: #FFF;
-    color: black;
+}
+
+.picture:hover p {
+    color: #000;
+}
+
+.picture:hover h3 {
+    color: #464547;
 }
 
 .picture:hover .picture_box img {
@@ -357,6 +366,7 @@ h2 {
     font-weight: 390;
     border: none;
 }
+
 .page_button{
     display: flex;
     gap: 15px;
@@ -383,51 +393,37 @@ h2 {
 
 /* Start: Developments */
 
-.information_body_developments{
-    padding-top: 157px;
-    padding-left: 122px;
-    display: grid;
-    gap: 50px;
-}
-.developments_text {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-    justify-content: center;
-}
-
-.developments_picture p {
-    color: #000;
-    font-family: 'Roboto';
-    font-size: 40px;
-    font-style: normal;
-    font-weight: 500;
-    padding-top: 51px;
-}
-
 .information_body_developments {
+    padding-top: 157px;
     display: grid;
     grid-template-columns: 1fr;
-    gap: 10px;
+    gap: 50px;
     place-items: center;
 }
 
-.developments_galery {
-    padding-top: 20px;
-    display: grid;
-    grid-template-columns: repeat(12, 1fr);
-    gap: 20px;  
+.developments_text {
+    text-align: center;
 }
 
-.developments_picture {
-    grid-column: span 3;
-    position: relative;
-    transition: transform 0.3s;
-}
-
-.developments_picture h3 {
+.picturo_box2 {
     background-color: #FFF;
+    width: 100%;
+    height: 145px;
+}
+
+.picture_box2_title {
+    padding: 42px 47px;
+}
+
+.picture_box2_title p {
+    color: #000;
+    font-family: 'Hedvig Letters Serif';
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 500;
+} 
+
+.picture_box2_title h3 {
     color: #464547;
     font-family: 'Hedvig Letters Serif';
     font-size: 25px;
@@ -435,39 +431,35 @@ h2 {
     font-weight: 400;
 }
 
-.developments_picture:hover {
-    cursor: pointer;
-} 
+.first_colum {
+    padding-top: 20px;
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    gap: 20px;  
+}
 
-.developments_picture:hover {
+.developments_galery {
+    grid-column: span 3;
+    position: relative;
+    transition: transform 0.3s;
+}
+
+.developments_picture {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    height: 262px;
+}
+
+.developments_picture_clip {
+    width: 100%; 
+    height: auto;
+    clip: rect(auto, auto, auto, auto);
+}
+
+.developments_galery:hover {
     transform: translateY(-10px);
     border: 1.5px solid #000;
-}
-
-.rent_picture img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-}
-
-.developments_picture h3 {
-    position: absolute;
-    z-index: 1;
-    bottom: 0;
-    left: 0;
-    height: 145px;
-    width: 100%;
-    padding: 20px;
-}
-
-.developments_picture p {
-    position: absolute;
-    z-index: 1;
-    bottom: -45px;
-    left: 0;
-    height: 145px;
-    width: 100%;
-    padding: 20px;
 }
 
 /* End: Developments */
