@@ -1,0 +1,14 @@
+@media screen and (max-width: 768px) {
+    .navbar_logo {
+        display: none;
+    }
+    .logomobil {
+        display: block;
+    }
+    .Login {
+        display: none;
+    }
+    .menu a {
+        display: none;
+    }
+}
