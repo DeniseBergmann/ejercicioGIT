@@ -39,7 +39,6 @@ box-sizing: border-box;
 .navbar_header .navbar_nav {
     height: 100%;
     display: flex;
-    flex-direction: row;
     justify-content: space-between;
     align-items: center;
 }
@@ -48,7 +47,6 @@ box-sizing: border-box;
     height: fit-content;
     display: flex;
     gap: 50px;
-    flex-direction: row;
     justify-content: center;
 }
 
@@ -123,6 +121,26 @@ box-sizing: border-box;
     font-weight: 500;
 }
 
+.home_section_button {
+    background: url(IMG/Flecha.png) no-repeat 30px 10px;
+    color: #FFF;
+    text-align: center;
+    font-family: 'Roboto';
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 390;
+    border: 1px solid #FFF;
+    border-radius: 100px;
+    padding: 10px 100px;
+    justify-self: end;
+}
+
+.home_section_button:hover {
+    background-color: #FFF;
+    color: #000;
+    border: #FFF;
+}
+
 .search_text {
     display: flex;
     align-items: flex-start;
@@ -158,17 +176,17 @@ input::placeholder {
 .home_section_vertical_social {
     position: fixed;
     z-index: 999;
-    left: 20px;
+    left: 15px;
     bottom: 196px;
     height: auto;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap: 20px;
+    gap: 15px;
 }
   
- .home_section_vertical_social p {
+.home_section_vertical_social p {
     font-family: 'Poppins';
     font-size: 20px;
     font-weight: 800;
@@ -183,16 +201,16 @@ input::placeholder {
     -o-transform: rotate(90deg);
 }
   
-  .home_section_vertical_social .line-vertical {
+.home_section_vertical_social .line-vertical {
     height: 45px;
     border-left: 1px solid #7E7E7E;
-    margin-top: 10px;
-  }
+    margin-top: 50px;
+}
   
-  .home_section_vertical_social .social {
+.home_section_vertical_social .social {
     height: 18px;
     width: 18px;
-  }
+}
 
 /* End: Social Media */
 
@@ -247,7 +265,7 @@ h2 {
     padding-left: 122px;
 }
 
-  .properties_for_information p {
+.properties_for_information p {
     color: #000;
     font-family: 'Roboto';
     font-size: 20px;
@@ -485,7 +503,7 @@ h2 {
 .first_services::after {
     content: "";
     background-color: #26282B;
-    width: 500px;
+    width: 400px;
     height: 100%;
     position: absolute;
     left: 0;
@@ -493,8 +511,8 @@ h2 {
 }
 
 .first_services img {
-    width: 600px;
-    height: 600px;
+    width: 500px;
+    height: 500px;
     object-fit: cover;
     z-index: 2;
 }
@@ -502,6 +520,14 @@ h2 {
 .services_button {
     display: flex; 
     justify-content: space-between;
+}
+
+.text_services .adorno_logo {
+    overflow-x: hidden;
+}
+
+.text_services .no_mobile {
+    display: none;
 }
 
 .services_button {

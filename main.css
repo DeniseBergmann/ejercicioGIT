@@ -30,12 +30,48 @@
   }
 
   .navbar_header {
-    background: linear-gradient(180deg, rgba(0,0,0,1) 0%, rgba(0,0,0,0.50) 75%, rgba(0,0,0,0.10) 100%);
+    background: transparent;
     height: 70px;
     width: 100%;
-    padding: 0 38px 0 50px;
-    border-bottom: 1px solid #FFF;
+    padding: 0 20px 0 20px;
+    border-bottom: none;
     position: fixed;
+  }
+
+  .home_section_presentation .home_section_text {
+    padding-left: 20px;
+    padding-top: 100px;
+    padding-bottom: 100px;
+  }
+
+  .search_text {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+  } 
+
+  .search_text .search_element {
+    padding-top: 100px;
+    padding-right: 20px;
+    padding-left: 20px;
+  }
+
+  .search {
+    background: transparent;
+    width: 455px;
+    height: 45px;
+    border: solid 1px #fff;
+    border-radius: 100px;
+    outline: none;
+    font-family: 'Roboto';
+    font-size: 20px;
+    font-weight: 390;
+    padding-left: 25px;
+  }
+
+  .home_section_button {
+    padding: 15px 150px;
+    justify-self: end;
   }
 
 }
