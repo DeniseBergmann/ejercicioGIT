@@ -1,14 +1,17 @@
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 600px) {
     .navbar_logo {
-        display: none;
+      display: none;
     }
-    .logomobil {
-        display: block;
+    .mobile_logo {
+      display: block;
     }
-    .Login {
-        display: none;
+  
+    .login {
+      display: none;
     }
-    .menu a {
-        display: none;
+  
+    .menu .lenguage {
+      display: none;
     }
-}
+  
+  }
