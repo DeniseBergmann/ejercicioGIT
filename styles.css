@@ -511,3 +511,175 @@ h2 {
 
 /* End: Services */
 
+/* Start: Footer */
+
+.footer {
+    padding-top: 224px;
+}
+
+footer {
+    background-color: black;
+    width: 100%;
+    display: grid;
+    justify-content: center;
+    position: relative;
+  }
+  
+.news {
+    width: 1920px;
+    height: 312px;
+    background-color: #26282B;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 49px 141px 55px 141px;
+    transform: translate(0, -50%);
+}
+  
+h4 {
+    color: #FFF;
+    font-family: 'Hedvig Letters Serif';
+    font-size: 60px;
+    font-style: normal;
+    font-weight: 500;
+}
+
+.footer_form p {
+    color: #FFF;
+    font-family: 'Roboto';
+    font-size: 25px;
+    font-style: normal;
+    font-weight: 390;
+}
+  
+.footer_form {
+    display: grid;
+    gap: 19px;
+}
+  
+.footer_form input {
+    background-color: transparent;
+    color: #7E7E7E;
+    font-family: 'Roboto';
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 390;
+    border: 1px solid #7E7E7E;
+    border-radius: 100px;
+    padding: 20px 53px;
+    width: 100%;
+    
+}
+  
+.footer_form button {
+    background-color: transparent;
+    color: #DF991B;
+    text-align: center;
+    font-family: 'Roboto';
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 390;
+    border: 1px solid #DF991B;
+    border-radius: 100px;
+    padding: 24px 123px;
+    width: fit-content;
+    justify-self: end;
+}
+
+.footer_form:hover button {
+    background-color: #FFF;
+    color: #000;
+    border: #FFF;
+}
+  
+.info {
+    width: 100%;
+    height: 310px;
+    display: grid;
+    color: white;
+}
+
+.footer_text {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+}
+
+.footer_text img {
+    padding-bottom: 50px;
+}
+
+.footer_text p {
+    color: #B4B7B7;
+    font-family: 'Roboto';
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 390;
+    padding-top: 8px;
+}
+
+.footer_text a {
+    text-decoration: none;
+    color: #B4B7B7;
+    font-family: 'Roboto';
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 390;
+}
+
+.grey {
+    padding-bottom: 45px;
+}
+
+.footer2 {
+    padding-left: 75px;
+}
+
+.white_text .white {
+    color: #fff;
+}
+
+.text_right {
+    text-align: right;
+}
+
+.text_right p {
+    color: #B4B7B7;
+    font-family: 'Roboto';
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 390;
+}
+
+.text_right .call_center {
+    color: #B4B7B7;
+    font-family: 'Hedvig Letters Serif';
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 400;
+}
+
+.text_right .number_contact {
+    color: #B4B7B7;
+    font-family: 'Hedvig Letters Serif';
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 400;
+    padding-bottom: 20px;
+}
+  
+  .footer_bar {
+    width: 100%;
+    height: 1.5px;
+    background-color: white;
+  }
+  
+  .copyright {
+    color: #FFF;
+    text-align: center;
+    font-family: Brandon Grotesque;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 450;
+    text-align: center;
+    margin-bottom: 5px;
+  }
