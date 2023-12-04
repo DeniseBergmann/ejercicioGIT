@@ -5,4 +5,22 @@
     .mobile_logo {
       display: block;
     }
+
+    .login {
+      display: none;
+    }
+
+    .nomobile {
+      display: none;
+    }
+
+    .header {
+      height: 100%;
+      width: 100%;
+      background: url(IMG/Imagen1.png);
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: 100%;
+  }
+
   }
