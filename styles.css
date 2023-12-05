@@ -169,6 +169,10 @@ input::placeholder {
     padding-left: 44px;
 }
 
+.mobile_bar {
+    display: none;
+}
+
 /* End: Home Landing image */
 
 /* Start: Social Media */
@@ -478,6 +482,10 @@ h2 {
 .developments_galery:hover {
     transform: translateY(-10px);
     border: 1.5px solid #000;
+}
+
+.version_mobile {
+    display: none;
 }
 
 /* End: Developments */

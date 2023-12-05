@@ -1,4 +1,4 @@
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 320px) {
 
   .navbar_logo {
     display: none;
@@ -33,45 +33,234 @@
     background: transparent;
     height: 70px;
     width: 100%;
-    padding: 0 20px 0 20px;
+    padding: 0 24px 0 24px;
     border-bottom: none;
     position: fixed;
   }
 
   .home_section_presentation .home_section_text {
-    padding-left: 20px;
+    padding-left: 24px;
     padding-top: 100px;
     padding-bottom: 100px;
   }
 
-  .search_text {
-    display: flex;
-    align-items: flex-start;
-    justify-content: center;
-  } 
-
   .search_text .search_element {
     padding-top: 100px;
-    padding-right: 20px;
-    padding-left: 20px;
+    padding-right: 24px;
+    padding-left: 24px;
+  }
+
+  input::placeholder {
+    color: #B4B7B7;
   }
 
   .search {
     background: transparent;
+    border: solid 1px #B4B7B7;
     width: 455px;
     height: 45px;
-    border: solid 1px #fff;
-    border-radius: 100px;
-    outline: none;
-    font-family: 'Roboto';
-    font-size: 20px;
-    font-weight: 390;
     padding-left: 25px;
   }
 
   .home_section_button {
-    padding: 15px 150px;
+    background: url(IMG/Flecha.png) no-repeat 20px 15px;
+    padding: 15px 100px;
     justify-self: end;
+  }
+
+  .mobile_bar {
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    gap: 5px;
+    padding-bottom: 51px;
+  } 
+
+  span {
+    font-size: 20px;
+  }
+
+  h2 {
+    font-size: 30px;
+  }
+
+  .information_body_sale {
+    padding-top: 20px;
+    grid-template-columns: 1fr;
+    gap: 36px;
+    place-items: left;
+  }
+
+  .properties_for_sale_text {
+    order: -1;
+  }
+
+  .information_body_rent {
+    padding-top: 60px;
+    grid-template-columns: 1fr;
+    gap: 36px;
+  }
+
+  .properties_for_sale_text {
+    justify-content: flex-start;
+    text-align: left;
+    padding-right: 20px;
+  }
+
+  .properties_for_rent_text {
+    justify-content: flex-start;
+    padding-left: 0;
+    padding-right: 20px;
+  }
+
+  .properties_for_galery {
+    display: grid;
+    grid-template-columns: repeat(2fr, 1fr);
+    overflow-x: hidden;
+    gap: 15px;
+  }
+
+  .inactive {
+    display: none;
+  }
+
+  .picture_box {
+    position: absolute;
+    bottom: 0;
+    left:0;
+    width: 100%;
+    padding: 10px 30px 10px;
+  }
+
+  .picture h3 {
+    font-size: 15px;
+  }
+
+  .picture p {
+    font-size: 25px;
+  }
+
+  .properties_for_button {
+    display: flex; 
+    justify-content: flex-start;
+    align-items: flex-start;
+  }
+
+  .big_button {
+    background-color: transparent;
+    color: #DF991B;
+    text-align: left;
+    padding: 20px 0;
+    border: none;
+  }
+
+  .big_button:hover {
+    background-color: transparent;
+    color: #000;
+  }
+
+  .page_button{
+    display: none;
+  }
+
+  .information_body_developments {
+    padding-top: 30px;
+    padding-left: 0;
+    padding-right: 20px;    
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 10px;
+    place-items: flex-start;
+  }
+
+  .developments_text {
+    text-align: left;
+  }
+
+  .first_colum {
+    display: none;
+  }
+
+  .version_mobile {
+    display: block;
+    padding-top: 20px;
+  }
+
+  .picturo_box2 {
+    height: 75px;
+  }
+
+  .picture_box2_title {
+    padding: 10px;
+  }
+
+  .picture_box2_title p {
+    font-size: 20px;
+  } 
+
+  .picture_box2_title h3 {
+    font-size: 15px;
+  }
+
+  .developments_picture {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+  }
+
+  .developments_galery {
+    margin-top: 10px;
+    position: relative;
+    transition: transform 0.3s;
+  }
+
+  .text_services .adorno_logo {
+    display: none;
+  }
+
+  .text_services .no_mobile {
+    display: block;
+    padding-bottom: 20px;
+  }
+
+  .information_services {
+    padding-top: 20px;
+    padding-right: 20px;
+    padding-left: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .first_services::after {
+    content: "";
+    background-color: #26282B;
+    width: 400px;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+  }
+
+  .second_services{
+    order: -1;
+  }
+
+  .first_services img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: 2;
+  }
+
+  .service_text {
+    padding-top: 20px;
+    border-top: 1.5px solid #DF991B;
+  }
+
+  .footer {
+    display: none;
   }
 
 }
