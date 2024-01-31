@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Serie Fibonacci</title>
+</head>
+<body>
+
+<script>
+    
+    var numeroDeElementos = prompt("Ingrese el número de elementos para la serie Fibonacci:");
+    numeroDeElementos = parseInt(numeroDeElementos);
+
+    //Función para generar la serie Fibonacci
+    function generarFibonacci(numeroDeElementos) {
+        var serie = [];
+
+        for (var i = 0; i < numeroDeElementos; i++) {
+            if (i <= 1) {
+                serie.push(i);
+            } else {
+                serie.push(serie[i - 1] + serie[i - 2]);
+            }
+        }
+
+        return serie;
+    }
+
+    console.log("Serie Fibonacci:");
+    var fibonacciSerie = generarFibonacci(numeroDeElementos);
+    for (var i = 0; i < fibonacciSerie.length; i++) {
+        console.log(fibonacciSerie[i]);
+    }
+</script>
+
+</body>
+</html>
